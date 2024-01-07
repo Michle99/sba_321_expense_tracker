@@ -11,7 +11,7 @@ export class ExpenseService {
     return this.expenses;
   }
 
-  addExpenses(expense: any) {
+  addExpense(expense: any) {
     this.expenses.push(expense);
   }
 
