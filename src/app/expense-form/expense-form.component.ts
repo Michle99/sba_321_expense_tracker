@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { ExpenseService } from '../expense.service';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-expense-form',
   standalone: true,
-  imports: [],
+  imports: [ FormsModule],
   templateUrl: './expense-form.component.html',
   styleUrl: './expense-form.component.css'
 })

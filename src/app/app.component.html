@@ -41,7 +41,7 @@
     font-weight: 500;
     line-height: 100%;
     letter-spacing: -0.125rem;
-    margin: 0;
+    margin: 25px;
     font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
       Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
       "Segoe UI Symbol";
@@ -53,14 +53,14 @@
   }
 
   main {
-    width: 100%;
-    min-height: 100%;
-    display: flex;
+    /* width: 100%; */
+    /* min-height: 100%; */
+    /* display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    box-sizing: inherit;
-    position: relative;
+    align-items: center; */
+    /* padding: 3rem; */
+    /* box-sizing: inherit; */
+    /* position: relative; */
   }
 
   .content {
@@ -80,15 +80,10 @@
   }
 </style>
 
-<main class="main">
-  <div class="content">
-    <div>
-      <h1>Hello, {{ title }}</h1>
-      <p>Congratulations! Your app is running. 🎉</p>
-    </div>
+<main>
+    <h1>Expense Tracker App</h1>
     <app-expense-form></app-expense-form>
     <app-expense-list></app-expense-list>
-  </div>
 </main>
 
 
