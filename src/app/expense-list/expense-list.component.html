@@ -1,1 +1,4 @@
-<p>expense-list works!</p>
+
+<div *ngFor="let expense of expenses; let i = index">
+    <p>{{ expense.description }} - {{ expense.amount }} <button (click)="deleteExpense(i)">Delete</button></p>
+  </div>
