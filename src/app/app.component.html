@@ -80,9 +80,16 @@
   }
 </style>
 
+<header>
+  <nav>
+    <ul>
+      <li><a routerLink="/">Home</a></li>
+      <li><a routerLink="/expenses">Expenses</a></li>
+      <li><a routerLink="/about">About</a></li>
+    </ul>
+  </nav>
+</header>
 <main>
-    <h1>Expense Tracker App</h1>
+  <router-outlet></router-outlet>
 </main>
 
-
-<router-outlet></router-outlet>
