@@ -1,11 +1,12 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { ExpenseService } from '../expense.service';
 import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-expense-form',
   standalone: true,
-  imports: [ FormsModule],
+  imports: [ FormsModule, CommonModule],
   templateUrl: './expense-form.component.html',
   styleUrl: './expense-form.component.css',
   encapsulation: ViewEncapsulation.Emulated,
@@ -33,5 +34,5 @@ export class ExpenseFormComponent {
   validateForm() {
     this.isFormValid = this.expense.description && this.expense.amount !== null;
   }
-  
+
 }
