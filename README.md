@@ -73,3 +73,5 @@ Make sure you have the following installed on your machine:
 2. Open your browser and go to `http://localhost:4200` to view the app.
 
 3. Use the navigation links to explore different sections of the app.
+
+<br>
