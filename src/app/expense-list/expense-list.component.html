@@ -1,4 +1,5 @@
 
 <div *ngFor="let expense of expenses; let i = index">
-    <p>{{ expense.description }} - {{ expense.amount }} <button (click)="deleteExpense(i)">Delete</button></p>
+    <p>{{ expense.description }} -- {{ expense.amount | currency: 'USD' }} 
+    <button (click)="deleteExpense(i)">Delete</button></p>
   </div>

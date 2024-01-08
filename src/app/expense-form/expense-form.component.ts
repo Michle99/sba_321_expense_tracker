@@ -13,12 +13,18 @@ import { FormsModule } from '@angular/forms';
 
 export class ExpenseFormComponent {
 
-  expense: any = {};
+  expense: any = {
+    description: '',
+    amount: null,
+  };
 
   constructor(private expenseService: ExpenseService) {}
 
   addExpense() {
-    this.expenseService.addExpense(this.expense);
-    this.expense = {};
+    this.expenseService.addExpense({ ...this.expense });
+    this.expense = {
+      description: '',
+      amount: null,
+    };
   }
 }
