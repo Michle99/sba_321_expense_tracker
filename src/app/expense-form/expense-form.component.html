@@ -1,5 +1,5 @@
 
-<div>
+<div [appHighlight]="isFormValid ? 'lightgreen' : 'lightcoral'">
     <label>Description:</label>
     <input [(ngModel)]="expense.description" placeholder="Description" (input)="validateForm()"/>
   
