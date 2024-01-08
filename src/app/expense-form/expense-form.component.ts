@@ -18,6 +18,8 @@ export class ExpenseFormComponent {
     amount: null,
   };
 
+  isFormValid: boolean = false;
+
   constructor(private expenseService: ExpenseService) {}
 
   addExpense() {
@@ -27,4 +29,9 @@ export class ExpenseFormComponent {
       amount: null,
     };
   }
+
+  validateForm() {
+    this.isFormValid = this.expense.description && this.expense.amount !== null;
+  }
+  
 }
