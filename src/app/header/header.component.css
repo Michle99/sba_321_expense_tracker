@@ -1,7 +1,7 @@
 
 nav {
   background-color: #81a6ce;
-  padding: 10px;
+  padding: 15px;
   margin-top: -9px;
 }
   
@@ -15,7 +15,8 @@ ul {
   
 li {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 25px;
+  margin-left: 15px;
 }
   
 a {
