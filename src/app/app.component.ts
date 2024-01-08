@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
-import { ExpenseFormComponent } from './expense-form/expense-form.component';
-import { ExpenseListComponent } from './expense-list/expense-list.component';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
 
 @Component({
@@ -10,9 +8,9 @@ import { ExpenseListComponent } from './expense-list/expense-list.component';
   standalone: true,
   imports: [
     CommonModule, 
-    RouterOutlet, 
-    ExpenseFormComponent, 
-    ExpenseListComponent,
+    RouterOutlet,
+    RouterLink,
+    RouterLinkActive
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
