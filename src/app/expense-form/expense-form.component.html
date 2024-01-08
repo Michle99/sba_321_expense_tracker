@@ -1,10 +1,10 @@
 
 <div>
     <label>Description:</label>
-    <input [(ngModel)]="expense.description" placeholder="Description" />
+    <input [(ngModel)]="expense.description" placeholder="Description" (input)="validateForm()"/>
   
     <label>Amount:</label>
-    <input [(ngModel)]="expense.amount" type="number" placeholder="Amount" />
+    <input [(ngModel)]="expense.amount" type="number" placeholder="Amount" (input)="validateForm()" />
   
-    <button (click)="addExpense()">Add Expense</button>
+    <button (click)="addExpense()" [ngClass]="{'disabled-button': !isFormValid}" [disabled]="!isFormValid">Add Expense</button>
   </div>
