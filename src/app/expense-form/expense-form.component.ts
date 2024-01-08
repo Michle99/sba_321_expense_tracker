@@ -2,11 +2,12 @@ import { Component, ViewEncapsulation } from '@angular/core';
 import { ExpenseService } from '../expense.service';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { HighlightDirective } from '../highlight.directive';
 
 @Component({
   selector: 'app-expense-form',
   standalone: true,
-  imports: [ FormsModule, CommonModule],
+  imports: [ FormsModule, CommonModule, HighlightDirective],
   templateUrl: './expense-form.component.html',
   styleUrl: './expense-form.component.css',
   encapsulation: ViewEncapsulation.Emulated,
