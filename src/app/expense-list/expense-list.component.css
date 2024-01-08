@@ -21,3 +21,7 @@ button:hover {
 p {
   font-weight: bold;
 }
+
+#no-expense {
+  margin: 25px;
+}
