@@ -4,10 +4,15 @@
 
 The Expense Tracker Angular App is a simple web application built with Angular that allows users to track their expenses. It provides features to add new expenses, view a list of existing expenses, and navigate through different sections of the application.
 
+## Screenshot
+
+<img src="./src/assets/expense_app.png" width="90%" alt="expense tracker app">
+
 ## Table of Contents
 
 - [Expense Tracker Angular App](#expense-tracker-angular-app)
   - [Overview](#overview)
+  - [Screenshot](#screenshot)
   - [Table of Contents](#table-of-contents)
   - [Features](#features)
   - [Getting Started](#getting-started)
