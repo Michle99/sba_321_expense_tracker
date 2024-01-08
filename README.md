@@ -1,27 +1,49 @@
-# Sba321ExpenseTracker
+# Expense Tracker Angular App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.9.
+## Overview
 
-## Development server
+The Expense Tracker Angular App is a simple web application built with Angular that allows users to track their expenses. It provides features to add new expenses, view a list of existing expenses, and navigate through different sections of the application.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Table of Contents
 
-## Code scaffolding
+- [Expense Tracker Angular App](#expense-tracker-angular-app)
+  - [Overview](#overview)
+  - [Table of Contents](#table-of-contents)
+  - [Features](#features)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Features
 
-## Build
+1. **Add Expense:** Users can add new expenses by providing a description and amount.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+2. **View Expenses:** Users can view a list of all recorded expenses.
 
-## Running unit tests
+3. **Delete Expense:** Users can delete specific expenses from the list.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+4. **Navigation:** The app includes a navigation bar with links to different sections, such as Home, Expenses, and About.
 
-## Running end-to-end tests
+5. **Routing:** Angular routing is used to navigate between different views, creating a seamless single-page application experience.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+6. **Styling:** Component-specific styling is implemented using Angular's view encapsulation, and attribute and structural directives are used for dynamic styling and class binding.
 
-## Further help
+7. **Custom Directive:** A custom directive, `appHighlight`, is created and used to dynamically highlight certain elements.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+8. **Angular Forms:** Angular forms are utilized for capturing and validating user input.
+
+## Getting Started
+
+### Prerequisites
+
+Make sure you have the following installed on your machine:
+
+- [Node.js](https://nodejs.org/)
+- [Angular CLI](https://cli.angular.io/)
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/expense-tracker-angular.git
