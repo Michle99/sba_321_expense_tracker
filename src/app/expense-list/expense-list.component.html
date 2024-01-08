@@ -1,6 +1,6 @@
 
 <div *ngIf="expenses.length > 0; else noExpenses">
-  <p *ngFor="let expense of expenses; let i = index">
+  <p *ngFor="let expense of expenses; let i = index" [ngStyle]="{'color': expense.amount > 50 ? 'green' : 'red'}">
     {{ expense.description }} - {{ expense.amount | currency:'USD' }}
     <button (click)="deleteExpense(i)">Delete</button>
   </p>
