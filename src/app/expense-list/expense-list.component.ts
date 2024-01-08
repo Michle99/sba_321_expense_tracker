@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { ExpenseService } from '../expense.service';
 import { CommonModule } from '@angular/common';
 
@@ -7,7 +7,8 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './expense-list.component.html',
-  styleUrl: './expense-list.component.css'
+  styleUrl: './expense-list.component.css',
+  encapsulation: ViewEncapsulation.Emulated,
 })
 export class ExpenseListComponent implements OnInit {
 
