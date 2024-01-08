@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { ExpenseService } from '../expense.service';
 import { FormsModule } from '@angular/forms';
 
@@ -7,7 +7,8 @@ import { FormsModule } from '@angular/forms';
   standalone: true,
   imports: [ FormsModule],
   templateUrl: './expense-form.component.html',
-  styleUrl: './expense-form.component.css'
+  styleUrl: './expense-form.component.css',
+  encapsulation: ViewEncapsulation.Emulated,
 })
 
 export class ExpenseFormComponent {
